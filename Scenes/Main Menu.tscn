@@ -1,0 +1,141 @@
+[gd_scene load_steps=11 format=3 uid="uid://cbxnj2b83hs07"]
+
+[ext_resource type="Script" path="res://Menu Assets/Main Menu.gd" id="1_1o2p1"]
+[ext_resource type="Texture2D" uid="uid://vlyqud18eqkt" path="res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png" id="2_ei7my"]
+[ext_resource type="Texture2D" uid="uid://bf73rj6jpvabu" path="res://Menu Assets/GUI Elements/Touch.png" id="3_7tiit"]
+[ext_resource type="Texture2D" uid="uid://be7od1iqerx2c" path="res://Menu Assets/GUI Elements/Option.png" id="4_gbj2m"]
+[ext_resource type="Texture2D" uid="uid://chixprploba0t" path="res://Menu Assets/GUI Elements/MagnifyingGlass.png" id="5_1fa0f"]
+[ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Scenes/Clouds.png" id="6_c40un"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xjsav"]
+line_spacing = 0.0
+font_size = 64
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvijs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_63tmc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x3d73"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_1o2p1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_c40un")
+expand_mode = 1
+
+[node name="Title" type="NinePatchRect" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -210.0
+offset_top = 151.0
+offset_right = 210.0
+offset_bottom = 271.0
+grow_horizontal = 2
+texture = ExtResource("2_ei7my")
+region_rect = Rect2(0, 0, 96, 32)
+patch_margin_left = 15
+patch_margin_top = 14
+patch_margin_right = 15
+patch_margin_bottom = 14
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/Title"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -24.0
+offset_right = 168.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "LEARNING IS FUN"
+label_settings = SubResource("LabelSettings_xjsav")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="NinePatchRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -210.0
+offset_right = 210.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ei7my")
+region_rect = Rect2(0, 0, 96, 32)
+patch_margin_left = 15
+patch_margin_top = 14
+patch_margin_right = 15
+patch_margin_bottom = 14
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Buttons"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 408.0
+offset_bottom = 408.0
+alignment = 1
+
+[node name="MnLButton" type="Button" parent="CanvasLayer/Buttons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pvijs")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_63tmc")
+icon = ExtResource("3_7tiit")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Buttons/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="3P1WButton" type="Button" parent="CanvasLayer/Buttons/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x3d73")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_63tmc")
+icon = ExtResource("4_gbj2m")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FtWButton" type="Button" parent="CanvasLayer/Buttons/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x3d73")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_63tmc")
+icon = ExtResource("5_1fa0f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="pressed" from="CanvasLayer/Buttons/VBoxContainer/MnLButton" to="." method="_on_mn_l_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons/VBoxContainer/HBoxContainer/3P1WButton" to="." method="_on_p_1w_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons/VBoxContainer/HBoxContainer/FtWButton" to="." method="_on_ft_w_button_pressed"]

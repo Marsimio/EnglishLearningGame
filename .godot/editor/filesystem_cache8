@@ -1,3 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714407470
+::res://::1714496124
 icon.svg::CompressedTexture2D::9012405843539256215::1714407467::1714407470::1::::<><>::
+README.md::TextFile::-1::1714408184::0::1::::<><>::
+Toriko.ttf::FontFile::6353807674125409171::1648816862::1714410225::1::::<><>::
+::res://Menu Assets/::1714491942
+Main Menu.gd::GDScript::-1::1714491942::0::1::::<>Node2D<>::
+pickupCoin.wav::AudioStreamWAV::728786536149265441::1714418166::1714418172::1::::<><>::
+::res://Menu Assets/GUI Elements/::1714418172
+MagnifyingGlass.png::CompressedTexture2D::5282102489214666349::1677586318::1714415383::1::::<><>::
+Option.png::CompressedTexture2D::2734092920354135484::1677587016::1714415383::1::::<><>::
+Touch.png::CompressedTexture2D::2805155945335897518::1677586864::1714415383::1::::<><>::
+UI_Wood_Frame_Horizontal_02.png::CompressedTexture2D::1498160708549223383::1671995588::1714415383::1::::<><>::
+::res://Scenes/::1714491534
+3P1W.tscn::PackedScene::2083284253255456934::1714491521::0::1::::<><>::uid://58nvlgh8vmux::::res://Scenes/Clouds.png
+Clouds.png::CompressedTexture2D::2174617184991576071::1714484169::1714484169::1::::<><>::
+FtW.tscn::PackedScene::5707136928335100417::1714491534::0::1::::<><>::uid://58nvlgh8vmux::::res://Scenes/Clouds.png
+Main Menu.tscn::PackedScene::4891317713631058962::1714490709::0::1::::<><>::res://Menu Assets/Main Menu.gd<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>uid://bf73rj6jpvabu::::res://Menu Assets/GUI Elements/Touch.png<>uid://be7od1iqerx2c::::res://Menu Assets/GUI Elements/Option.png<>uid://chixprploba0t::::res://Menu Assets/GUI Elements/MagnifyingGlass.png<>uid://58nvlgh8vmux::::res://Scenes/Clouds.png
+MnLScene.tscn::PackedScene::8186176854919031439::1714490709::0::1::::<><>::uid://58nvlgh8vmux::::res://Scenes/Clouds.png
