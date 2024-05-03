@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5wqn1u5oqdpt"]
+
+[ext_resource type="Texture2D" uid="uid://bqx5737w3d1dn" path="res://MnL Assets/LetterIcon2.png" id="1_inxmx"]
+[ext_resource type="Script" path="res://MnL Assets/Letter.gd" id="2_47y4g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rlvi2"]
+font_size = 32
+
+[node name="TextureRect" type="TextureRect"]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = -1
+anchor_right = 0.0888889
+anchor_bottom = 0.05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_inxmx")
+script = ExtResource("2_47y4g")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.062
+anchor_top = 0.25
+anchor_right = 0.9375
+anchor_bottom = 0.9375
+offset_left = 0.0320001
+text = "A"
+label_settings = SubResource("LabelSettings_rlvi2")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ciyqedch457s7"
+path="res://.godot/imported/Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3-9a80d67b150367cd91c150fe9b3d6e48.mp3str"
+
+[deps]
+
+source_file="res://Assets/Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3"
+dest_files=["res://.godot/imported/Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3-9a80d67b150367cd91c150fe9b3d6e48.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

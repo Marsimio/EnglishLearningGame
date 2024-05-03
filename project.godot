@@ -15,6 +15,12 @@ run/main_scene="res://Scenes/Main Menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*res://Autoloads/game_manager.gd"
+Music="*res://Autoloads/MainMusic.tscn"
+SoundEffect="*res://Autoloads/SoundEffect.tscn"
+
 [display]
 
 window/size/viewport_width=720
@@ -25,7 +31,7 @@ window/handheld/orientation=1
 
 [gui]
 
-theme/custom_font="res://Toriko.ttf"
+theme/custom_font="res://Assets/Toriko.ttf"
 
 [rendering]
 

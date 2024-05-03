@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cnktygmlpajh6"]
 
-[ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Scenes/Clouds.png" id="1_sb78o"]
+[ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Assets/Clouds.png" id="1_sb78o"]
 
 [node name="MnLScene" type="Node2D"]
 
