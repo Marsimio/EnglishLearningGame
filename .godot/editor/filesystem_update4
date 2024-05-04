@@ -1,11 +1,11 @@
-res://Autoloads/MainMusic.tscn
+res://Scenes/MnLScene.tscn
 res://MnL Assets/Letter.gd
 res://Scenes/Main Menu.tscn
-res://Scenes/MnLScene.tscn
-res://MnL Assets/Letter.tscn
-res://MnL Assets/LetterGray.tscn
 res://Autoloads/SoundEffect.tscn
+res://Scenes/3P1W.tscn
 res://Scenes/MnLScene.gd
-res://Autoloads/game_manager.gd
+res://MnL Assets/LetterGray.tscn
+res://Scenes/Scripts/3P1W.gd
 res://MnL Assets/LetterGray.gd
-res://Menu Assets/Main Menu.gd
+res://Scenes/Scripts/MnLScene.gd
+res://Scenes/FtW.tscn

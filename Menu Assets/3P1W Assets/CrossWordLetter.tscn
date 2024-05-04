@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcqpk3tstmynw"]
+[gd_scene load_steps=4 format=3 uid="uid://crw12tgy623om"]
 
-[ext_resource type="Texture2D" uid="uid://jw67xu5a48b8" path="res://Menu Assets/Letters/LetterIcon.png" id="1_4vv2m"]
-[ext_resource type="Script" path="res://MnL Assets/LetterGray.gd" id="2_7mgi6"]
+[ext_resource type="Texture2D" uid="uid://jw67xu5a48b8" path="res://Menu Assets/Letters/LetterIcon.png" id="1_toiws"]
+[ext_resource type="Script" path="res://MnL Assets/LetterGray.gd" id="2_fuxlm"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rlvi2"]
 font_size = 64
@@ -13,8 +13,8 @@ anchor_right = 0.177778
 anchor_bottom = 0.1
 size_flags_horizontal = 6
 size_flags_vertical = 6
-texture = ExtResource("1_4vv2m")
-script = ExtResource("2_7mgi6")
+texture = ExtResource("1_toiws")
+script = ExtResource("2_fuxlm")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]

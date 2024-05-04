@@ -18,6 +18,7 @@ func _drop_data(position, data):
 	var correct = data.get_parent()
 	completed = true
 	texture_rect.texture = correct.texture
+	label.visible = true
 	correct.queue_free()
 	GameManager.score_emitted.emit()
 	SoundEffect.stream = load("res://Assets/Correct.wav")

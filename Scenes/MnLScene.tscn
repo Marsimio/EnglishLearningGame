@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://dovpeweg4pw20"]
 
 [ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Assets/Clouds.png" id="1_5v4py"]
-[ext_resource type="Script" path="res://Scenes/MnLScene.gd" id="1_e1buo"]
+[ext_resource type="Script" path="res://Scenes/Scripts/MnLScene.gd" id="1_e1buo"]
 [ext_resource type="Texture2D" uid="uid://vlyqud18eqkt" path="res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png" id="3_tf6t7"]
-[ext_resource type="Script" path="res://Scenes/Object.gd" id="4_mp448"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Object.gd" id="4_mp448"]
 [ext_resource type="Texture2D" uid="uid://cqk0t2p5cwujh" path="res://Assets/Back_Arrow.png" id="5_h5its"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_83fu8"]
@@ -27,8 +27,7 @@ texture = ExtResource("1_5v4py")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Background"]
-layout_mode = 0
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 offset_left = 13.0
 offset_top = 380.0
 offset_right = 143.0

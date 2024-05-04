@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5wqn1u5oqdpt"]
 
-[ext_resource type="Texture2D" uid="uid://bqx5737w3d1dn" path="res://MnL Assets/LetterIcon2.png" id="1_inxmx"]
+[ext_resource type="Texture2D" uid="uid://bqx5737w3d1dn" path="res://Menu Assets/Letters/LetterIcon2.png" id="1_inxmx"]
 [ext_resource type="Script" path="res://MnL Assets/Letter.gd" id="2_47y4g"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rlvi2"]

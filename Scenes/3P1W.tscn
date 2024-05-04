@@ -1,8 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://4xfnfxvrlavu"]
+[gd_scene load_steps=11 format=3 uid="uid://4xfnfxvrlavu"]
 
+[ext_resource type="Script" path="res://Scenes/Scripts/3P1W.gd" id="1_8cs1g"]
 [ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Assets/Clouds.png" id="1_shbu3"]
+[ext_resource type="Texture2D" uid="uid://vlyqud18eqkt" path="res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png" id="2_swvxh"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Object.gd" id="3_b5kba"]
+[ext_resource type="Texture2D" uid="uid://cqk0t2p5cwujh" path="res://Assets/Back_Arrow.png" id="4_2qy6o"]
+[ext_resource type="Texture2D" uid="uid://cgk702ro0e4ud" path="res://Menu Assets/GUI Elements/Lightbulb.png" id="6_att1y"]
 
-[node name="MnLScene" type="Node2D"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b4iup"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mbedl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2cm5c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p71ya"]
+
+[node name="3P1W Scene" type="Node2D"]
+script = ExtResource("1_8cs1g")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -16,3 +30,118 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource("1_shbu3")
 expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 13.0
+offset_top = 380.0
+offset_right = 143.0
+offset_bottom = 770.0
+alignment = 1
+
+[node name="Title" type="NinePatchRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.106944
+anchor_top = 0.763281
+anchor_right = 0.868056
+anchor_bottom = 0.944531
+offset_bottom = 24.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("2_swvxh")
+region_rect = Rect2(0, 0, 96, 32)
+patch_margin_left = 15
+patch_margin_top = 14
+patch_margin_right = 15
+patch_margin_bottom = 14
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Title"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0218978
+anchor_top = 0.125
+anchor_right = 0.978101
+anchor_bottom = 0.658334
+offset_right = 0.000671387
+offset_bottom = 55.4665
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Object" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.404167
+anchor_top = 0.370313
+anchor_right = 0.581944
+anchor_bottom = 0.470313
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+script = ExtResource("3_b5kba")
+metadata/_edit_use_anchors_ = true
+
+[node name="Object2" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.226389
+anchor_top = 0.370313
+anchor_right = 0.404166
+anchor_bottom = 0.470313
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+script = ExtResource("3_b5kba")
+metadata/_edit_use_anchors_ = true
+
+[node name="Object3" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.581944
+anchor_top = 0.370313
+anchor_right = 0.759721
+anchor_bottom = 0.470313
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand_mode = 1
+script = ExtResource("3_b5kba")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 128.0
+offset_bottom = 128.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_b4iup")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mbedl")
+icon = ExtResource("4_2qy6o")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -84.0
+offset_top = 32.0
+offset_right = -30.0
+offset_bottom = 86.0
+grow_horizontal = 0
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2cm5c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p71ya")
+icon = ExtResource("6_att1y")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.240278
+anchor_top = 0.0273438
+anchor_right = 0.783333
+anchor_bottom = 0.046875
+max_value = 4.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
