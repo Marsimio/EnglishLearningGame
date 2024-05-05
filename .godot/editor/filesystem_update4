@@ -1,11 +1,13 @@
-res://Scenes/MnLScene.tscn
-res://MnL Assets/Letter.gd
 res://Scenes/Main Menu.tscn
-res://Autoloads/SoundEffect.tscn
-res://Scenes/3P1W.tscn
-res://Scenes/MnLScene.gd
-res://MnL Assets/LetterGray.tscn
+res://MnL Assets/Letter.gd
 res://Scenes/Scripts/3P1W.gd
-res://MnL Assets/LetterGray.gd
-res://Scenes/Scripts/MnLScene.gd
+res://Scenes/MnLScene.tscn
+res://Scenes/3P1W.tscn
 res://Scenes/FtW.tscn
+res://MnL Assets/Letter.tscn
+res://MnL Assets/LetterGray.tscn
+res://Autoloads/SoundEffect.tscn
+res://Autoloads/MainMusic.tscn
+res://Menu Assets/FtW Assets/CrossWordLetter.tscn
+res://Scenes/FtW.gd
+res://MnL Assets/LetterGray.gd

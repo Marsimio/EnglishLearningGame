@@ -23,3 +23,4 @@ func _drop_data(position, data):
 	GameManager.score_emitted.emit()
 	SoundEffect.stream = load("res://Assets/Correct.wav")
 	SoundEffect.play()
+

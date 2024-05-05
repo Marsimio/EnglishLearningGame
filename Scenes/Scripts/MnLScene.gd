@@ -10,9 +10,9 @@ var sound = load("res://Assets/pickupCoin.wav")
 
 var objects = [
 	{"name": "apple", "image": preload("res://MnL Assets/Food/Apple.png")},
-	{"name": "banana", "image": preload("res://MnL Assets/Food/Apple.png")},
-	{"name": "orange", "image": preload("res://MnL Assets/Food/Apple.png")},
-	{"name": "drink", "image": preload("res://MnL Assets/Food/Apple.png")}
+	{"name": "banana", "image": preload("res://MnL Assets/Food/Banana.png")},
+	{"name": "orange", "image": preload("res://MnL Assets/Food/Orange.png")},
+	{"name": "drink", "image": preload("res://MnL Assets/Food/Drink.png")}
 ]
 
 var current_object_index = 0
@@ -79,3 +79,5 @@ func _on_button_pressed():
 	SoundEffect.play()
 	await SoundEffect.finished
 	get_tree().change_scene_to_file("res://Scenes/Main Menu.tscn")
+
+

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714848457
+::res://::1714937229
 icon.svg::CompressedTexture2D::9012405843539256215::1714407467::1714407470::1::::<><>::
 README.md::TextFile::-1::1714408184::0::1::::<><>::
 ::res://Assets/::1714753129
@@ -10,14 +10,30 @@ Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3::AudioStreamMP3::5384875958665
 Finish.wav::AudioStreamWAV::4317892590841442955::1714752150::1714752164::1::::<><>::
 pickupCoin.wav::AudioStreamWAV::728786536149265441::1714418166::1714753129::1::::<><>::
 Toriko.ttf::FontFile::6353807674125409171::1648816862::1714688074::1::::<><>::
-::res://Autoloads/::1714846401
+::res://Autoloads/::1714936354
 game_manager.gd::GDScript::-1::1714750621::0::1::::<>Node<>::
-MainMusic.tscn::PackedScene::3922590481686501401::1714753186::0::1::::<><>::uid://ciyqedch457s7::::res://Assets/Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3
-SoundEffect.tscn::PackedScene::3176414673955232096::1714846401::0::1::::<><>::
-::res://Menu Assets/::1714848108
+MainMusic.tscn::PackedScene::3922590481686501401::1714936354::0::1::::<><>::uid://ciyqedch457s7::::res://Assets/Debussy_ Clair de Lune - ULTRAKILL Soundtrack.mp3
+SoundEffect.tscn::PackedScene::3176414673955232096::1714936354::0::1::::<><>::
+::res://Menu Assets/::1714931918
 Main Menu.gd::GDScript::-1::1714753174::0::1::::<>Node2D<>::
-::res://Menu Assets/3P1W Assets/::1714848113
-CrossWordLetter.tscn::PackedScene::6013095886414877856::1714848081::0::1::::<><>::uid://jw67xu5a48b8::::res://Menu Assets/Letters/LetterIcon.png<>res://MnL Assets/LetterGray.gd
+::res://Menu Assets/3P1W Assets/::1714937237
+::res://Menu Assets/3P1W Assets/Apple/::1714937302
+Apple1.jpg::CompressedTexture2D::2002831954736926541::1714937270::1714937350::1::::<><>::
+Apple2.jpg::CompressedTexture2D::3273773906177564765::1714937283::1714937350::1::::<><>::
+Apple3.jpg::CompressedTexture2D::6755389381734457261::1714937299::1714937350::1::::<><>::
+::res://Menu Assets/3P1W Assets/Banana/::1714937327
+Banana1.jpg::CompressedTexture2D::6573428564183534234::1714937314::1714937350::1::::<><>::
+Banana2.jpg::CompressedTexture2D::874302272087809671::1714937319::1714937350::1::::<><>::
+Banana3.jpg::CompressedTexture2D::4294156460705770654::1714937324::1714937350::1::::<><>::
+::res://Menu Assets/3P1W Assets/Orange/::1714937347
+Orange1.jpg::CompressedTexture2D::2225508924570931571::1714937335::1714937350::1::::<><>::
+Orange2.png::CompressedTexture2D::5111227291935720396::1714937341::1714937350::1::::<><>::
+Orange3.jpg::CompressedTexture2D::459195229124500566::1714937345::1714937350::1::::<><>::
+::res://Menu Assets/FtW Assets/::1714936354
+Acorns.wav::AudioStreamWAV::3567899864185256549::1714931056::1714931056::1::::<><>::
+Banana.wav::AudioStreamWAV::1109385840437434536::1714931058::1714931058::1::::<><>::
+CrossWordLetter.gd::GDScript::-1::1714929911::0::1::::<>TextureRect<>::
+CrossWordLetter.tscn::PackedScene::6013095886414877856::1714936354::0::1::::<><>::uid://jw67xu5a48b8::::res://Menu Assets/Letters/LetterIcon.png<>res://Menu Assets/FtW Assets/CrossWordLetter.gd
 ::res://Menu Assets/GUI Elements/::1714844673
 Lightbulb.png::CompressedTexture2D::5216607240432968143::1714844666::1714844673::1::::<><>::
 MagnifyingGlass.png::CompressedTexture2D::5282102489214666349::1677586318::1714415383::1::::<><>::
@@ -27,19 +43,23 @@ UI_Wood_Frame_Horizontal_02.png::CompressedTexture2D::1498160708549223383::16719
 ::res://Menu Assets/Letters/::1714844669
 LetterIcon2.png::CompressedTexture2D::3558803046557634803::1714496964::1714842918::1::::<><>::
 LetterIcon.png::CompressedTexture2D::679056515809705967::1714496909::1714842918::1::::<><>::
-::res://MnL Assets/::1714848113
-Letter.gd::GDScript::-1::1714842789::0::1::::<>TextureRect<>::
-Letter.tscn::PackedScene::6924919072207112125::1714842918::0::1::::<><>::uid://bqx5737w3d1dn::::res://Menu Assets/Letters/LetterIcon2.png<>res://MnL Assets/Letter.gd
-LetterGray.gd::GDScript::-1::1714844409::0::1::::<>TextureRect<>::
-LetterGray.tscn::PackedScene::2560758528713483968::1714846401::0::1::::<><>::uid://jw67xu5a48b8::::res://Menu Assets/Letters/LetterIcon.png<>res://MnL Assets/LetterGray.gd
-::res://MnL Assets/Food/::1714688178
+::res://MnL Assets/::1714936354
+Letter.gd::GDScript::-1::1714927890::0::1::::<>TextureRect<>::
+Letter.tscn::PackedScene::6924919072207112125::1714936354::0::1::::<><>::uid://bqx5737w3d1dn::::res://Menu Assets/Letters/LetterIcon2.png<>res://MnL Assets/Letter.gd
+LetterGray.gd::GDScript::-1::1714936354::0::1::::<>TextureRect<>::
+LetterGray.tscn::PackedScene::2560758528713483968::1714936354::0::1::::<><>::uid://jw67xu5a48b8::::res://Menu Assets/Letters/LetterIcon.png<>res://MnL Assets/LetterGray.gd
+::res://MnL Assets/Food/::1714932761
 Apple.png::CompressedTexture2D::8494868284751360132::1714688148::1714688178::1::::<><>::
-::res://Scenes/::1714848425
-3P1W.tscn::PackedScene::2083284253255456934::1714846952::0::1::::<><>::res://Scenes/Scripts/3P1W.gd<>uid://58nvlgh8vmux::::res://Assets/Clouds.png<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>res://Scenes/Scripts/Object.gd<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png<>uid://cgk702ro0e4ud::::res://Menu Assets/GUI Elements/Lightbulb.png
-FtW.tscn::PackedScene::5707136928335100417::1714848425::0::1::::<><>::uid://58nvlgh8vmux::::res://Assets/Clouds.png<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png
-Main Menu.tscn::PackedScene::4891317713631058962::1714846952::0::1::::<><>::res://Menu Assets/Main Menu.gd<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>uid://bf73rj6jpvabu::::res://Menu Assets/GUI Elements/Touch.png<>uid://be7od1iqerx2c::::res://Menu Assets/GUI Elements/Option.png<>uid://chixprploba0t::::res://Menu Assets/GUI Elements/MagnifyingGlass.png<>uid://58nvlgh8vmux::::res://Assets/Clouds.png
-MnLScene.tscn::PackedScene::8186176854919031439::1714846952::0::1::::<><>::uid://58nvlgh8vmux::::res://Assets/Clouds.png<>res://Scenes/Scripts/MnLScene.gd<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>res://Scenes/Scripts/Object.gd<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png
-::res://Scenes/Scripts/::1714846952
-3P1W.gd::GDScript::-1::1714846952::0::1::::<>Node2D<>::
-MnLScene.gd::GDScript::-1::1714845862::0::1::::<>Node2D<>::
+Banana.png::CompressedTexture2D::3797801793265908852::1714932191::1714932761::1::::<><>::
+Drink.png::CompressedTexture2D::7103674752935706797::1714932688::1714932761::1::::<><>::
+Orange.png::CompressedTexture2D::3654290991335087004::1714751005::1714932761::1::::<><>::
+::res://Scenes/::1714936354
+3P1W.tscn::PackedScene::2083284253255456934::1714936354::0::1::::<><>::res://Scenes/Scripts/3P1W.gd<>uid://58nvlgh8vmux::::res://Assets/Clouds.png<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>res://Scenes/Scripts/Object.gd<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png<>uid://cgk702ro0e4ud::::res://Menu Assets/GUI Elements/Lightbulb.png
+FtW.gd::GDScript::-1::1714931892::0::1::::<>Node2D<>::
+FtW.tscn::PackedScene::5707136928335100417::1714936354::0::1::::<><>::res://Scenes/FtW.gd<>uid://58nvlgh8vmux::::res://Assets/Clouds.png<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png<>uid://cgk702ro0e4ud::::res://Menu Assets/GUI Elements/Lightbulb.png
+Main Menu.tscn::PackedScene::4891317713631058962::1714936354::0::1::::<><>::res://Menu Assets/Main Menu.gd<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>uid://bf73rj6jpvabu::::res://Menu Assets/GUI Elements/Touch.png<>uid://be7od1iqerx2c::::res://Menu Assets/GUI Elements/Option.png<>uid://chixprploba0t::::res://Menu Assets/GUI Elements/MagnifyingGlass.png<>uid://58nvlgh8vmux::::res://Assets/Clouds.png
+MnLScene.tscn::PackedScene::8186176854919031439::1714936354::0::1::::<><>::uid://58nvlgh8vmux::::res://Assets/Clouds.png<>res://Scenes/Scripts/MnLScene.gd<>uid://vlyqud18eqkt::::res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png<>res://Scenes/Scripts/Object.gd<>uid://cqk0t2p5cwujh::::res://Assets/Back_Arrow.png
+::res://Scenes/Scripts/::1714934368
+3P1W.gd::GDScript::-1::1714934368::0::1::::<>Node2D<>::
+MnLScene.gd::GDScript::-1::1714932780::0::1::::<>Node2D<>::
 Object.gd::GDScript::-1::1714688523::0::1::::<>TextureRect<>::

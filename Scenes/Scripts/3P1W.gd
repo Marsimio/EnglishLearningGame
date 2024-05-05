@@ -10,15 +10,14 @@ extends Node2D
 var sound = load("res://Assets/pickupCoin.wav")
 
 var objects = [
-	{"name": "apple", "image1": preload("res://MnL Assets/Food/Apple.png"), "image2": preload("res://MnL Assets/Food/Apple.png"), "image3": preload("res://MnL Assets/Food/Apple.png")},
-	{"name": "banana", "image1": preload("res://MnL Assets/Food/Apple.png"), "image2": preload("res://MnL Assets/Food/Apple.png"), "image3": preload("res://MnL Assets/Food/Apple.png")},
-	{"name": "orange", "image1": preload("res://MnL Assets/Food/Apple.png"), "image2": preload("res://MnL Assets/Food/Apple.png"), "image3": preload("res://MnL Assets/Food/Apple.png")}
+	{"name": "apple", "image1": preload("res://Menu Assets/3P1W Assets/Apple/Apple1.jpg"), "image2": preload("res://Menu Assets/3P1W Assets/Apple/Apple2.jpg"), "image3": preload("res://Menu Assets/3P1W Assets/Apple/Apple3.jpg")},
+	{"name": "banana", "image1": preload("res://Menu Assets/3P1W Assets/Banana/Banana1.jpg"), "image2": preload("res://Menu Assets/3P1W Assets/Banana/Banana2.jpg"), "image3": preload("res://Menu Assets/3P1W Assets/Banana/Banana3.jpg")},
+	{"name": "orange", "image1": preload("res://Menu Assets/3P1W Assets/Orange/Orange1.jpg"), "image2": preload("res://Menu Assets/3P1W Assets/Orange/Orange2.png"), "image3": preload("res://Menu Assets/3P1W Assets/Orange/Orange3.jpg")}
 ]
 
 var current_object_index = 0
 var hint = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	GameManager.score_emitted.connect(check_completion)
 	progress_bar.max_value = objects.size()

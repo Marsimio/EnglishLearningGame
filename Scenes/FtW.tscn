@@ -1,14 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnktygmlpajh6"]
+[gd_scene load_steps=10 format=3 uid="uid://cnktygmlpajh6"]
 
+[ext_resource type="Script" path="res://Scenes/FtW.gd" id="1_0jor8"]
 [ext_resource type="Texture2D" uid="uid://58nvlgh8vmux" path="res://Assets/Clouds.png" id="1_sb78o"]
 [ext_resource type="Texture2D" uid="uid://vlyqud18eqkt" path="res://Menu Assets/GUI Elements/UI_Wood_Frame_Horizontal_02.png" id="2_ly6w8"]
 [ext_resource type="Texture2D" uid="uid://cqk0t2p5cwujh" path="res://Assets/Back_Arrow.png" id="3_18aje"]
+[ext_resource type="Texture2D" uid="uid://cgk702ro0e4ud" path="res://Menu Assets/GUI Elements/Lightbulb.png" id="5_3m1ve"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqcfl"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k3ftg"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jg21u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tgde0"]
+
 [node name="MnLScene" type="Node2D"]
+script = ExtResource("1_0jor8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -66,3 +73,31 @@ icon = ExtResource("3_18aje")
 flat = true
 icon_alignment = 1
 expand_icon = true
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -84.0
+offset_top = 32.0
+offset_right = -30.0
+offset_bottom = 86.0
+grow_horizontal = 0
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jg21u")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tgde0")
+icon = ExtResource("5_3m1ve")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.240278
+anchor_top = 0.0273438
+anchor_right = 0.783333
+anchor_bottom = 0.046875
+max_value = 2.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
